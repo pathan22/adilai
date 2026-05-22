@@ -36,7 +36,7 @@ client = OpenAI(
 
     base_url="https://openrouter.ai/api/v1",
 
-    api_key=os.getenv("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")
+    api_key=os.getenv("OPENAI_API_KEY")
 )
 
 # HOME
