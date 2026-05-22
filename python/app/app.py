@@ -2,6 +2,7 @@ from flask import Flask, render_template
 from flask import request, jsonify
 from openai import OpenAI
 import json
+import os
 
 app = Flask(
     __name__,
@@ -35,7 +36,7 @@ client = OpenAI(
 
     base_url="https://openrouter.ai/api/v1",
 
-    api_key="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"
+    api_key=os.getenv("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")
 )
 
 # HOME
