@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <title>Adil AI</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+ <nav class="navbar">
+
+        <div class="logo">
+            🤖 Adil AI
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="/" style="color:white;text-decoration:none;">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="/about" style="color:#38bdf8;text-decoration:none;">
+                    About
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- Main Chat -->
+
+    <div class="main-container">
+
+        <div class="chat-container">
+
+            <div class="chat-header">
+
+                <h1>Adil AI Assistant</h1>
+
+                <p>Smart AI Powered Chatbot</p>
+
+            </div>
+
+            <div id="chat-box"></div>
+
+            <div class="input-area">
+
+                <input
+                    type="text"
+                    id="user-input"
+                    placeholder="Message Adil AI..."
+                >
+
+                <button onclick="sendMessage()"
+                        class="send-btn">
+
+                    ➤
+
+                </button>
+
+                <button onclick="startListening()"
+                        class="mic-btn">
+
+                    🎤
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    
+<script src="/static/script.js"></script>
+</body>
+
+</html>
